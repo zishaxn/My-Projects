@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <script src="script.js" defer></script>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+    </link>
+    <title>My Projects</title>
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"> Zishan Chaudhary</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#TalkChat">TalkChat</a></li>
+                <li><a href="#Dice-Game">Dice Game</a></li>
+                <li><a href="#Pokemon-Explorer">Pokemon Explorer</a></li>
+                <!-- <li><a href="#contact">Contact</a></li> -->
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hamburger menu -->
+    <nav id="hamburger-nav">
+        <div class="logo">Zishan Chaudhary</div>
+        <div class="hamburger-menu">
+            <!-- below div will be used as the icon , i.e thren lines in hamburger icon -->
+            <div class="hamburger-icon" onclick="toggleMenu()"> <!-- toggleMenu function will open the hamburger menu-->
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <!-- <li><a href="#about" onclick="toggleMenu()">About</a></li> -->
+                <li><a href="#TalkChat" onclick="toggleMenu()">TalkChat</a></li>
+                <li><a href="#Dice-Game" onclick="toggleMenu()">Dice Game</a></li>
+                <li><a href="#Pokemon-Explorer" onclick="toggleMenu()">Pokemon Explorer</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="projects">
+        <p class="section__text__p1">My Recent</p>
+        <h1 class="title">Project</h1>
+        <div class="skills-details-conatainer">
+
+            <!-- TalkChat Project -->
+            <div class="about-containers" id="TalkChat">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <video controls>
+                            <source src="./assets/chat-app-demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <h2 class="skills-sub-title project-title">TalkChat</h2>
+                    <p>
+                        TalkChat is a real-time chat application built with the MERN stack, offering features like user
+                        registration,
+                        authentication, avatar customization, and real-time messaging. The project includes a
+                        user-friendly
+                        interface with
+                        login, registration, and chat pages.</p>
+                    <div class="btn-container">
+                        <a href="https://github.com/zishaxn/TalkChat" target="_blank">
+                            <button class="btn btn-color-1 ">Github</button>
+                        </a>
+                        <a href="https://talk-chat-frontend.vercel.app/" target="_blank">
+                            <button class="btn btn-color-2 project-btn">Live Demo</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pokemon Explorer Project -->
+            <div class="about-containers" id="Pokemon-Explorer">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <video controls>
+                            <source src="./assets/pokemon-explorere-demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <h2 class="skills-sub-title project-title">Pokemon Explorer</h2>
+                    <p>Pokémon Explorer is a web app powered by PokeAPI, offering an interactive interface for users to
+                        explore comprehensive
+                        details about various Pokémon. Users can easily navigate, search, and view information such as
+                        name, ID, types, weight,
+                        height, abilities, and stats. The application also features dynamic search, navigation, and
+                        sorting functionalities for
+                        a seamless user experience.</p>
+                    <div class="btn-container">
+                        <a href="https://github.com/zishaxn/Pokemon-Explorer" target="_blank">
+                            <button class="btn btn-color-1 ">Github</button>
+                        </a>
+                        <a href="https://poke-explore-zishaxn.netlify.app/" target="_blank">
+                            <button class="btn btn-color-2 project-btn">Live Demo</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Dice Game Project -->
+            <div class="about-containers" id="Dice-Game">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <video controls>
+                            <source src="./assets/dice-game=demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <h2 class="skills-sub-title project-title">Dice Game</h2>
+                    <p>Dice Game is a straightforward web application created with React and Vite. In this game, players
+                        select a number
+                        between 1 and 6, then roll the dice. If the rolled number corresponds to the chosen number, the
+                        player gains points;
+                        otherwise, they lose 2 points.</p>
+                    <div class="btn-container">
+                        <a href="https://github.com/zishaxn/Dice-Project" target="_blank">
+                            <button class="btn btn-color-1 ">Github</button>
+                        </a>
+                        <a href="https://dice-game-zishaxn.netlify.app/" target="_blank">
+                            <button class="btn btn-color-2 project-btn">Live Demo</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p class="footer-text">Copyright &#169; 2023 <a href="https://www.linkedin.com/in/zishaxnn">zishan chaudhary</a>
+            All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

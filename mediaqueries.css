@@ -1,0 +1,174 @@
+/* below two css rules are for hamburger menu */
+
+/* CSS rules to apply only when the screen width is 900 pixels or less */
+/* @media screen and (max-width: 900px) {
+    #desktop-nav {
+        display: none;
+    }
+
+    #hamburger-nav {
+        display: flex;
+    }
+} */
+
+/* CSS rules should apply when the screen width is 901 pixels or more */
+/* @media screen and (min-width: 901px) {
+    #desktop-nav {
+        display: flex;
+    }
+
+    #hamburger-nav {
+        display: none;
+    }
+} */
+
+
+/* actully my laptop screen is around 1400px so i have set the max-width 1300px so as soon
+it goes below 1300px below queries will be implemented.
+* 
+*/
+@media screen and (max-width: 1300px) {
+    #profile {
+        height: 83vh;
+        margin-bottom: 8rem;
+    }
+
+    .about-containers {
+        flex-wrap: wrap;
+    }
+
+    #contact {
+        height: fit-content;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+
+    #hamburger-nav {
+        display: flex;
+    }
+
+    #experience,
+    .experience-details-container {
+        margin-top: 2rem;
+    }
+
+    #profile,
+    .section-container {
+        display: block;
+    }
+
+    .arrow,
+    .arrow-end {
+        display: none;
+    }
+
+    section,
+    .section-container {
+        height: fit-content;
+    }
+
+    section {
+        margin: 0 5%;
+    }
+
+    .section__pic-container {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+    }
+
+    .about-containers {
+        margin-top: 0;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    #contact {
+        height: fit-content;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    footer {
+        height: 40vh;
+    }
+
+    #profile {
+        height: 83vh;
+        margin-bottom: 0;
+    }
+
+    article {
+        font-size: 1rem;
+    }
+
+    footer nav {
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+
+    .about-containers,
+    .contact-info-upper-container,
+    .btn-container {
+        flex-wrap: wrap;
+    }
+
+    .contact-info-container {
+        margin: 0;
+    }
+
+    .contact-info-container p,
+    .nav-links li a {
+        font-size: 1rem;
+    }
+
+    .experience-sub-title {
+        font-size: 1.25rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .section__pic-container {
+        width: auto;
+        height: 46vw;
+        justify-content: center;
+    }
+
+    .section__text__p2 {
+        font-size: 1.25rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .text-container {
+        text-align: justify;
+    }
+}
